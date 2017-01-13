@@ -1,11 +1,9 @@
-<h1>Welcome to the Q/A</h1>
-
-<p>A forum for open discusson</p>
-
+<h4>Questions:</h4>
 <ol>
   {{#each model as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ol>
+<hr>
 
 {{new-question saveQuestion2="saveQuestion3"}}
