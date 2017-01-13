@@ -16,10 +16,15 @@ export default Ember.Route.extend({
      this.transitionTo('index');
    },
 
-    destroyQuestion(question) {
-      question.destroyRecord();
-      this.transitionTo('index');
-    },
+   destroyQuestion(question) {
+     var answer_deletions = question.get('answers').map(function(answer) {
+       return answer.destroyRecord();
+     });
+     Ember.RSVP.all(answer_deletions).then(function() {
+       return question.destroyRecord();
+     });
+     this.transitionTo('index');
+   },
 
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
