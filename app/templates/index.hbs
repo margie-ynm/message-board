@@ -1,9 +1,18 @@
 <h4>Questions:</h4>
 <ol>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ol>
 <hr>
 
 {{new-question saveQuestion2="saveQuestion3"}}
+
+<h2>All Answers</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - by {{answer.author}}</li>
+  {{/each}}
+
+  {{new-answer saveAnswer="saveAnswer"}}
+</ul>

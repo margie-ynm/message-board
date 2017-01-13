@@ -8,7 +8,14 @@
   "note": "none."
 }, {
   "inquiry": "Would you steal a loaf of bread to feed your family?",
-  "author": "Bobby Sieger",
+  "author": "Dwight Johnson",
   "note": "Real talk.."
-}]
+}],
+"answers": [{
+    "author": "Sara",
+    "content": "No."
+  }, {
+    "author": "Mary",
+    "content": "Yes, all the way!"
+  }]
 }
