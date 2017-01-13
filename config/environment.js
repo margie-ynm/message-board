@@ -6,12 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    firebase: {
-    apiKey: 'AIzaSyDBEJtdvYgh5Tk4Pe-D3__pr5NwCv9Vr_E',
-    authDomain: 'question-forum-17334.firebaseapp.com',
-    databaseURL: 'https://question-forum-17334.firebaseio.com',
-    storageBucket: 'question-forum-17334.appspot.com',
-  },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,6 +17,12 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+    apiKey: 'AIzaSyDBEJtdvYgh5Tk4Pe-D3__pr5NwCv9Vr_E',
+    authDomain: 'question-forum-17334.firebaseapp.com',
+    databaseURL: 'https://question-forum-17334.firebaseio.com',
+    storageBucket: 'question-forum-17334.appspot.com'
+  },
 
     APP: {
       // Here you can pass flags/options to your application instance
