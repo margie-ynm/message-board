@@ -1,4 +1,4 @@
 <li>
-  <p>{{question.question}}</p>
+  <p>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</p>
   <p>By: {{question.author}}</p>
 </li>
