@@ -1,9 +1,10 @@
 {{#if addNewQuestion}}
-<h1>New Question</h1>
+<h3>New Question</h3>
+<br>
 <div>
   <form>
     <div class="form-group">
-      <label for="inquiry">Inquiry:</label>
+      <label for="inquiry">Question:</label>
       {{input value=inquiry id="inquiry"}}
     </div>
 
@@ -17,9 +18,9 @@
       {{input value=author id="author"}}
     </div>
 
-    <button {{action 'saveQuestion1'}}>Save</button>
+    <button class="btn btn-success" {{action 'saveQuestion1'}}>Save</button>
   </form>
 </div>
 {{else}}
-<button {{action 'questionFormShow'}}>Add question</button>
+<button class="btn btn-primary" {{action 'questionFormShow'}}>Add question</button>
 {{/if}}

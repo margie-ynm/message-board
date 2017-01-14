@@ -1,0 +1,15 @@
+body {
+  background-color: #FEFEFA;
+}
+
+.btn.btn-danger {
+  float: right;
+}
+
+.btn.btn-info {
+  float: right;
+}
+
+h1 {
+  text-shadow: 1px 1px 0px black;
+}
